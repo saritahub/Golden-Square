@@ -7,12 +7,14 @@ RSpec.describe StringBuilder do
        result = stringbuilder.size 
        expect(result).to eq 4
     end
+    
     it "Counts the length of strings" do 
         stringbuilder = StringBuilder.new
         stringbuilder.add("treehouse")
         result = stringbuilder.size 
         expect(result).to eq 9
      end
+
      it "Returns string str" do 
         stringbuilder = StringBuilder.new
         stringbuilder.add("tree")
