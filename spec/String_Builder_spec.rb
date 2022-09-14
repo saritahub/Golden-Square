@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/01-Testing-Methods/String_Builder.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/02-Testing-Classes/String_Builder.rb'
 
 RSpec.describe StringBuilder do 
     it "Counts the length of strings" do 

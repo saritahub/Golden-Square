@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/01-Testing-Methods/gratitudes.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/02-Testing-Classes/gratitudes.rb'
 
 RSpec.describe Gratitudes do
     it "Returns Be grateful for: + @gratitudes" do
