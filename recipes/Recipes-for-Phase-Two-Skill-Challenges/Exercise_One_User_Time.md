@@ -1,8 +1,10 @@
 # {{PROBLEM}} Method Design Recipe
 
 ## 1. Describe the Problem
-
-_Put or write the user story here. Add any clarifying notes you might have._
+- As a user
+- So I can manage my time
+- I want to see an esitimate of reading time for a text
+- I can read 200 words per minute 
 
 ## 2. Design the Method Signature
 
@@ -11,11 +13,19 @@ _Include the name of the method, its parameters, return value, and side effects.
 ```ruby
 # EXAMPLE
 
-# `extract_upper` extracts uppercase words from a list of words
-uppercase_words = extract_uppercase(mixed_words)
+# reading_time works out the length of time to read a given string
+reading_time = string_reading_time(string)
 
-mixed_words: a string (e.g. "hello WORLD")
-uppercase_words: a list of strings (e.g. ["WORLD"])
+string: a string (e.g. "Hello World")
+OUTPUT
+time: length of time to read a given string in minutes (e.g. "2 minutes")
+- Read 200 words per minute 
+- time = string.length / 200 
+- 200 words per minute = 12000 words per hour 
+- Rounds the number of minutes to the nearest integer
+- Displays this as a float (example 1.0 minute / 2.0 minutes)
+
+
 
 # The method doesn't print anything or have any other side-effects
 ```
@@ -24,16 +34,31 @@ uppercase_words: a list of strings (e.g. ["WORLD"])
 
 _Make a list of examples of what the method will take and return._
 
-```ruby
-# EXAMPLE
+- time = words / minutes (start rounding to 6 decimal points)
 
-extract_uppercase("hello WORLD") => ["WORLD"]
-extract_uppercase("HELLO WORLD") => ["HELLO", "WORLD"]
-extract_uppercase("hello world") => []
-extract_uppercase("hello WoRLD") => []
-extract_uppercase("hello WORLD!") => ["WORLD"]
-extract_uppercase("") => []
-extract_uppercase(nil) throws an error
+### Test strings under 200 words
+- If they are under 200 words, need to convert to a factorial and round this to X decimal points?
+- Add "minutes" to the end of the string
+
+### Test strings OVER 200 words
+- Again, round to X decimal points
+- Add "minutes" at the end of the string
+
+```ruby
+fifteen_sentence = ("One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Thirteen Fourteen Fifteen")
+
+twenty_sentence = ("One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen Twenty")
+
+thirty_sentence = ("One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen Twenty TwentyOne TwentyTwo TwentyThree TwentyFour TwentyFive TwentySix TwentySeven TwentyEight TwentyNine Thirty")
+
+
+
+reading_time("") => ""
+reading_time(string_with_fifteen_words) => (15/200) minutes (0.0)
+reading_time(string_with_200_words) => (200/200) minutes (1.0)
+reading_time(string_with_600_words) => (600/200) minutes (2.0)
+
+
 ```
 
 _Encode each example as a test. You can add to the above list as you go._

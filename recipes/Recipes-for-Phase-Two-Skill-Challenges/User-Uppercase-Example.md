@@ -1,7 +1,6 @@
 # {{PROBLEM}} Method Design Recipe
 
 ## 1. Describe the Problem
-
 - As a user
 - So that I can analyse key words in my texts 
 - I want to see a list of uppercase words 
