@@ -2,7 +2,7 @@ require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-Two-Skill-C
 
 RSpec.describe "reading_time method" do 
     it "returns an empty string if given an empty string" do 
-        expect(reading_time("")). to eq ""
+        expect(reading_time("")).to eq ""
     end 
 
     it "returns the string time when string is not empty" do
