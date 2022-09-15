@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/01-Testing-Methods/check_codeword.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-One-Testing-Bites/01-Testing-Methods/check_codeword.rb'
 
 RSpec.describe "check_codeword" do
     it "returns 'Correct! Come in' if codeword is horse" do

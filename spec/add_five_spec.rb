@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/01-Testing-Methods/add_five.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-One-Testing-Bites/01-Testing-Methods/add_five.rb'
 
 RSpec.describe "add_five" do 
     it 'adds five to num' do

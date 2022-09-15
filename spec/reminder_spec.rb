@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/02-Testing-Classes/reminder.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-One-Testing-Bites/02-Testing-Classes/reminder.rb'
 
 RSpec.describe Reminder do
   it "Returns the task and name" do

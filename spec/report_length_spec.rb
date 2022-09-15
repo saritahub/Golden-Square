@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/01-Testing-Methods/report_length.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-One-Testing-Bites/01-Testing-Methods/report_length.rb'
 
 RSpec.describe "Check string length" do
     it "returns 'This string was 5 characters long'" do

@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/02-Testing-Classes/counter.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-One-Testing-Bites/02-Testing-Classes/counter.rb'
 
 RSpec.describe Counter do
     it "Adds num to the counter, and outputs a string" do

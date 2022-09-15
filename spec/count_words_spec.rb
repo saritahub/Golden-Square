@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Diary/count_words.rb' 
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-Two-Skill-Challenges/02_Test_Drive_A_Single_Method/count_words.rb' 
 
 RSpec.describe "count_words" do
     it "takes a string and returns the word count" do

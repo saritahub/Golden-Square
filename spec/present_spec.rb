@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/03-Testing-For-Errors/present.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-One-Testing-Bites/03-Testing-For-Errors/present.rb'
 
 RSpec.describe Present do 
     context "When a present has already been wrapped" do

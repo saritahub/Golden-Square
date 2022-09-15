@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/03-Testing-For-Errors/password_checker.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-One-Testing-Bites/03-Testing-For-Errors/password_checker.rb'
 
 RSpec.describe PasswordChecker do
     it "Password length is greater than 8 and returns true" do

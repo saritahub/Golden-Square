@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Diary/make_snippet.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-Two-Skill-Challenges/02_Test_Drive_A_Single_Method/make_snippet.rb'
 
 RSpec.describe "make_snippet" do
     it "takes a string" do
