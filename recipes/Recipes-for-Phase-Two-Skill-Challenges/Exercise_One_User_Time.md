@@ -14,9 +14,8 @@ _Include the name of the method, its parameters, return value, and side effects.
 # EXAMPLE
 
 # reading_time works out the length of time to read a given string
-reading_time = string_reading_time(string)
 
-string: a string (e.g. "Hello World")
+string: a string parameter (e.g. "Hello World")
 OUTPUT
 time: length of time to read a given string in minutes (e.g. "2 minutes")
 - Read 200 words per minute 
@@ -45,11 +44,6 @@ _Make a list of examples of what the method will take and return._
 - Add "minutes" at the end of the string
 
 ```ruby
-fifteen_sentence = ("One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Thirteen Fourteen Fifteen")
-
-twenty_sentence = ("One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen Twenty")
-
-thirty_sentence = ("One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen Twenty TwentyOne TwentyTwo TwentyThree TwentyFour TwentyFive TwentySix TwentySeven TwentyEight TwentyNine Thirty")
 
 
 
