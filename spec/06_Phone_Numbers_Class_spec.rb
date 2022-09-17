@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-Two-Skill-Challenges/05_test_drive_a_class/05_Phone_Numbers_Class.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-Two-Skill-Challenges/06_Design_Single_Class/06_Phone_Numbers_Class.rb'
 
 RSpec.describe PhoneBook do 
 

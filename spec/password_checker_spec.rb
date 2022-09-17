@@ -14,7 +14,7 @@ RSpec.describe PasswordChecker do
             expect { passwordchecker.check("Test")}.to raise_error "Invalid password, must be 8+ characters."
         end 
     end 
-end 
+end
 
 
 
