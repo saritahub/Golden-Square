@@ -22,9 +22,3 @@ class PhoneBook
     end 
 end 
 
-
-  phone_book = PhoneBook.new 
-
-  phone_book.extract_numbers("My faves: 07800000000, 07800000001")
- p  phone_book.list
-
