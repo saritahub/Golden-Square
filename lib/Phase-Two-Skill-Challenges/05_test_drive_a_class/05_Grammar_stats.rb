@@ -1,7 +1,7 @@
 class GrammarStats
     def initialize
       @all_text = []
-      @passing_text= []
+      @passing_text = []
     end
   
     def check(text) 
