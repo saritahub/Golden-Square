@@ -6,7 +6,7 @@
 #         gratitudes.add("Cats")
 #         result = gratitudes.format()
 #         expect(result).to eq "Be grateful for: Cats"
-#     end
+#     end 
 #     it "Returns gratitude list" do 
 #     gratitudes = Gratitudes.new 
 #     gratitudes.add("Cats")
