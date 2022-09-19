@@ -1,7 +1,5 @@
 require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-Two-Skill-Challenges/06_Design_Single_Class/06_Single_Class_Exercise.rb'
 
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-Two-Skill-Challenges/06_Design_Single_Class/06_Phone_Numbers_Class.rb'
-
 RSpec.describe Task do 
 
     describe "add_task method" do 
