@@ -1,4 +1,4 @@
-require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-Two-Skill-Challenges/05_test_drive_a_class/diary.rb'
+require '/Users/saritaradia/Desktop/Projects/Golden-Square/lib/Phase-Two-Skill-Challenges/08_Test_Drive_A_Class_System/08_Diary_Entry.rb'
 
 RSpec.describe DiaryEntry do 
     context "It creates a diary entry" do 
@@ -40,10 +40,17 @@ RSpec.describe DiaryEntry do
             expect(result).to eq 3
         end 
 
+        it "reading_time returns an integer (1) estimated reading time" do 
+            diary = DiaryEntry.new("test_title", "one two three four five")
+            result = diary.count_words
+            result = diary.reading_time(2)
+            expect(result).to eq 3
+        end 
+
         context "given a wpm of 0" do 
             it "fails" do 
                 diary = DiaryEntry.new("title", "test " * 3)
-                expect { diary.reading_time(0) }. to raise_error "Reading time must be over zero."
+                expect { diary.reading_time(0) }.to raise_error "Reading time must be over zero."
             end 
         end  
 
