@@ -1,19 +1,20 @@
-class Task
-    def initialize(task)
-        @task = task 
-        @all_tasks = []
-    end 
+class TaskOne
+    def initialize(title)
+        @title = title
+        @alltasks = []
+        @alltasks.push(title)
+        @done = false
+    end
 
-    def add(task)   
-        @all_tasks << task 
+    def title #Returns title as a string
+        @title
     end
-  
-    def all
-    #Returns a list of Task instances
-        @alltasks 
-    end 
-  
-    def complete
-    #Returns a list of COMPLETED Task instances
+
+    def mark_complete
+        @done = true
     end
-  end 
+
+    def complete?
+        @done
+    end
+end

@@ -15,7 +15,7 @@ class Todo
 
   def done?
     @done 
-  end
+  end 
 end
 
 

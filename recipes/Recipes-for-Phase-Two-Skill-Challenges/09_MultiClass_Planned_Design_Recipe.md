@@ -29,7 +29,7 @@ Verbs
 ```
 (Copied from ASCIIFlow)
 ┌──────────────────────────────────┐
-│   TaskList (Class)               │
+│   TaskListOne (Class)               │
 │   --------                       │
 │   Methods                        │
 │   - add                          │
@@ -47,7 +47,7 @@ Verbs
               │ more Tasks
               ▼
 ┌─────────────────────────────────┐
-│  Task  (Class)              │
+│  TaskOne  (Class)              │
 │  --------                       │
 │  Methods                        │
 │  - mark_complete                │
@@ -64,7 +64,7 @@ Verbs
 _Also design the interface of each class in more detail._
 
 ```ruby
-class Task
+class TaskOne
   def add(task)
   end
 
@@ -77,7 +77,7 @@ class Task
   end
 end 
 
-class TaskList
+class TaskListOne
   def initalizer(title) #title is a string
   end
 
@@ -105,26 +105,26 @@ combinations that reflect the ways in which the system will be used._
 ```ruby
 TaskList
 # 1 Returns all tasks
-task_list = TaskList.new
-task_1 = Task.new("Walk")
-task_2 = Task.new("Run")
+task_list = TaskListOne.new
+task_1 = TaskOne.new("Walk")
+task_2 = TaskOne.new("Run")
 task_list.add(task_1)
 task_list.add(task_2)
 task_list.all # => [task_1, task_2]
 
 # 2 Mark a task as complete, returns UNCOMPLETED task
-task_list = TaskList.new
-task_1 = Task.new("Walk")
-task_2 = Task.new("Run")
+task_list = TaskListOne.new
+task_1 = TaskOne.new("Walk")
+task_2 = TaskOne.new("Run")
 task_list.add(task_1)
 task_list.add(task_2)
 task_2.mark_complete
 task_list.all # => [task_1]
 
 # 3  Mark a task as complete, returns COMPLETED task
-task_list = TaskList.new
-task_1 = Task.new("Walk")
-task_2 = Task.new("Run")
+task_list = TaskListOne.new
+task_1 = TaskOne.new("Walk")
+task_2 = TaskOne.new("Run")
 task_list.add(task_1)
 task_list.add(task_2)
 task_2.mark_complete
@@ -140,27 +140,26 @@ _Create examples, where appropriate, of the behaviour of each relevant class at
 a more granular level of detail._
 
 ```ruby
-#TASKLIST
+#TASKLISTONE
 #1 
-task_list = TaskList.new
-task_list.all # => []
+ # => []
 
 #2
-task_list = TaskList.new
-task_list.complete # => []
+task_list = TaskListOne.new
+task_list.completed # => []
 
 
 #Task 
 #1 
-task = Task.new("Walk")
+task = TaskOne.new("Walk")
 task.title # => "Walk"
 
 #2 
-task = Task.new("Walk")
+task = TaskOne.new("Walk")
 task.complete? # => false
 
 #3
-task = Task.new("Walk")
+task = TaskOne.new("Walk")
 task.mark_complete
 task.complete? # => true
 
