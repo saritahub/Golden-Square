@@ -21,8 +21,7 @@ class Diary
         entry.count_words
        end.sum
 
-        @count_words
-
+      @count_words
     end
   
     def reading_time(wpm)

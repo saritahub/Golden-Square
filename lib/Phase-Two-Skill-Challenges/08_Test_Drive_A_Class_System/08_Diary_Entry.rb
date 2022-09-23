@@ -5,16 +5,6 @@ class DiaryEntry
       @contents = contents 
       @furtherest_word_read = 0
     end
-    
-    # attr_reader :title :contents
-
-    # def title
-    #   @title 
-    # end
-  
-    # def contents
-    #   @contents 
-    # end
   
     def count_words
         return 0 if @contents.empty

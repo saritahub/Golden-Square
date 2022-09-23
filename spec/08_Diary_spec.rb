@@ -17,4 +17,4 @@ context "it returns an empty array if no entries" do
 end 
 
 
-end #End of RSpec
+end 
