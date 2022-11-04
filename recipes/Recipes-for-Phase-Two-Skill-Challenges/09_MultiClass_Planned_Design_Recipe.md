@@ -1,15 +1,14 @@
 # {{PROBLEM}} Multi-Class Planned Design Recipe
 
 ## 1. Describe the Problem
+
 - As a user
 - So that I can keep track of my tasks
 - I want a program I can add my todo tasks to and see a list of them
 
-
-- As a user 
+- As a user
 - So that I can focus on tasks to complete
 - I want to mark tasks as complete and have them disappear from the list
-
 
 ## 2. Design the Class System
 
@@ -19,11 +18,13 @@ uses asciiflow.com but you could also use excalidraw.com, draw.io, or miro.com_
 
 Extract nouns and verbs to help create methods and Classes
 Nouns
-- todo tasks 
+
+- todo tasks
 - list of todo tasks
 
 Verbs
-- mark as complete 
+
+- mark as complete
 - add
 
 ```
@@ -70,12 +71,12 @@ class TaskOne
 
   def all
   #Returns a list of Task instances
-  end 
+  end
 
   def complete
   #Returns a list of COMPLETED Task instances
   end
-end 
+end
 
 class TaskListOne
   def initalizer(title) #title is a string
@@ -83,7 +84,7 @@ class TaskListOne
 
   def title
   #Returns title as string
-  end 
+  end
 
   def mark_complete
   #Marks task as complete
@@ -128,7 +129,7 @@ task_2 = TaskOne.new("Run")
 task_list.add(task_1)
 task_list.add(task_2)
 task_2.mark_complete
-task_list.complete # => [task_2] 
+task_list.complete # => [task_2]
 
 
 
@@ -141,7 +142,7 @@ a more granular level of detail._
 
 ```ruby
 #TASKLISTONE
-#1 
+#1
  # => []
 
 #2
@@ -149,12 +150,12 @@ task_list = TaskListOne.new
 task_list.completed # => []
 
 
-#Task 
-#1 
+#Task
+#1
 task = TaskOne.new("Walk")
 task.title # => "Walk"
 
-#2 
+#2
 task = TaskOne.new("Walk")
 task.complete? # => false
 

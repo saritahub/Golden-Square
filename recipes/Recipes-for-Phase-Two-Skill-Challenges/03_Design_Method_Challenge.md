@@ -7,6 +7,7 @@
 - I want to check if a test includes the string "#TODO"
 
 ### GOAL:
+
 - Check if the string includes "#TODO"
 - Return true (or the string) if it does
 - If the string does NOT contain #TODO, fail -> "This string does not contain TODO"
@@ -32,7 +33,7 @@ _Make a list of examples of what the method will take and return._
 ```ruby
 # EXAMPLE
 
-string_contain_TODO("#TODO")                          => true 
+string_contain_TODO("#TODO")                          => true
 string_contain_TODO("string")                         => fail
 string_contain_TODO("Another string")                 => fail
 string_contain_TODO("String containing #TODO")        => true

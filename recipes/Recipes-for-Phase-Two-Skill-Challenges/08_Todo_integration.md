@@ -6,8 +6,7 @@
 - So that I can keep track of my tasks
 - I want a program I can add my todo tasks to and see a list of them
 
-
-- As a user 
+- As a user
 - So that I can focus on tasks to complete
 - I want to mark tasks as complete and have them disappear from the list
 
@@ -59,7 +58,7 @@ class Todo
   end
 end
 
-  
+
 
 ```
 
@@ -73,13 +72,13 @@ _Make a list of examples of how the class will behave in different situations._
 #UNIT TEST
 
 todo_1 = Todo.new("Task")
-todo_1.task 
+todo_1.task
 => Returns "Task"
 
 #2 Class TodoList and Class Todo
 # incomplete method returns all non-done tasks
 # INTEGRATION TEST
-todo_list = TodoList.new 
+todo_list = TodoList.new
 todo_1 = Todo.new("Task")
 todo_list.add(todo_1)
 todo_list.incomplete
@@ -88,7 +87,7 @@ todo_list.incomplete
 #3 Class TodoList and Class Todo
 # Returns all complete tasks
 # INTEGRATION TEST
-todo_list = TodoList.new 
+todo_list = TodoList.new
 todo_1 = Todo.new("Task")
 todo_list.add(todo_1)
 todo_1.mark_done!
@@ -103,8 +102,8 @@ todo_list = TodoList.new
 todo_1 = Todo.new("Task")
 todo_list.add(todo_1)
 todo_1.mark_done!
-todo_1.done? 
-=> Returns true 
+todo_1.done?
+=> Returns true
 
 #5
 # Marks all todos as complete
@@ -114,10 +113,10 @@ todo_1 = Todo.new("Wash car")
 todo_2 = Todo.new("Clean room")
 todo_list.add(todo_1)
 todo_list.add(todo_2)
-todo_list.give_up! 
+todo_list.give_up!
 todo_list.complete
 => Returns [todo_1, todo_2]
-       
+
 
 ```
 

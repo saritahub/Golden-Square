@@ -6,7 +6,6 @@
 - So that I can keep track of my music listening
 - I want to add tracks I've listened to and see a list of them
 
-
 ## 2. Design the Class Interface
 
 _Include the initializer and public methods with all parameters and return values._
@@ -40,25 +39,25 @@ _Make a list of examples of how the class will behave in different situations._
 # EXAMPLE
 
 # 1 Returns empty array if no songs added
-music = Music.new 
+music = Music.new
 music = music.add_song("")
 result = music.song_list
 # => [""]
 
 # 2 Adds one song to the @music_list array
-music = Music.new 
+music = Music.new
 result = music.add_song("I'M THAT GIRL: BEYONCE")
 result = music.song_list
 # => ["I'M THAT GIRL: BEYONCE"]
 
 # 3 Adds two songs to the @music_list array
-music = Music.new 
+music = Music.new
 result = music.add_song("I'M THAT GIRL: BEYONCE")
 result = music.add_song("COZY: BEYONCE")
 result = music.song_list
 # => ["I'M THAT GIRL: BEYONCE", "COZY: BEYONCE"]
 
-            
+
 
 ```
 

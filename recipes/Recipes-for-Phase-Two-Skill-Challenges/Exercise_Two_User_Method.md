@@ -7,6 +7,7 @@
 - I want to verify that a text starts with a capital letter and ends with a suitable sentence-ending punctuation mark.
 
 ### GOAL:
+
 - Check if a string starts with a capital letter AND
 - Ends with a punctuation mark (!)
 
@@ -35,7 +36,7 @@ _Make a list of examples of what the method will take and return._
 
 user_grammar("Hello")           => false
 user_grammar("hello!")          => false
-user_grammar("Hey!")            => true 
+user_grammar("Hey!")            => true
 user_grammar("")                => false
 user_grammar("Hello there!")    => true
 ```
